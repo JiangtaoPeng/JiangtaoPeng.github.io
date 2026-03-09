@@ -1,11 +1,9 @@
-
 ---
 title: "Kafka &amp; Redis 面试题深度解析"
 date: 2026-03-09
 tags: [技术, Kafka, Redis, 面试]
 subtitle: "20道经典面试题，从基础到高级，全面掌握消息队列与缓存"
 ---
-
 # Kafka &amp; Redis 面试题深度解析
 
 ## 第一部分：基础概念与特性
