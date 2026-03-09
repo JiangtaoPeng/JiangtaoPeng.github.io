@@ -22,8 +22,8 @@ paginate_path: "/page/:num/"
 
 # Author
 author:
-  name: Your Name
-  email: your-email@example.com
+  name: Jiangtao Peng
+  email: pengjtnina@gmail.com
   bio: "热爱生活，热爱自然，用文字记录每一个治愈的瞬间 🌱"
   avatar: "/assets/images/avatar.jpg"
 

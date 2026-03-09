@@ -27,7 +27,6 @@ permalink: /about/
   <ul>
     <li><strong>生活随笔</strong> — 日常中那些被阳光照亮的小事</li>
     <li><strong>技术笔记</strong> — 编程路上的学习与思考</li>
-    <li><strong>读书感悟</strong> — 与文字相遇后留下的痕迹</li>
     <li><strong>自然记录</strong> — 四季更迭中的美好瞬间</li>
   </ul>
 
