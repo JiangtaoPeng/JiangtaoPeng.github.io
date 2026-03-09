@@ -1,4 +1,4 @@
-// 🌿 Green Healing Blog - Main JavaScript
+// 🌿 青栖 - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -88,6 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  console.log('🌿 Green Healing Blog loaded successfully');
+  console.log('🌿 青栖 loaded successfully');
 });
 

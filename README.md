@@ -1,8 +1,8 @@
-# 🌿 Green Healing Blog
+# 🌿 青栖
 
 一个绿色治愈主题的个人博客，使用 Jekyll 构建，托管在 GitHub Pages。
 
-![Green Healing Blog Preview](assets/images/banner.jpg)
+![青栖 Preview](assets/images/banner.jpg)
 
 ## ✨ 特性
 
