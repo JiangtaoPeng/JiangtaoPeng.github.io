@@ -16,6 +16,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
+# Kramdown settings — 解决表格/代码块渲染问题
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 # Pagination
 paginate: 6
 paginate_path: "/page/:num/"
