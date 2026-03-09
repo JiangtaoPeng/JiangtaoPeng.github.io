@@ -21,6 +21,5 @@ permalink: /archive/
     </li>
     {% endfor %}
   </ul>
-</div>a
+</div>
 {% endfor %}
-

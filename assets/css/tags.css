@@ -1,0 +1,197 @@
+/* ============================================
+   🏷️ Tags Page Styles
+   ============================================ */
+
+/* ---------- Tags Cloud ---------- */
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.tag-cloud-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  background: var(--green-50);
+  border: 1px solid var(--green-200);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: var(--green-800);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.tag-cloud-item:hover,
+.tag-cloud-item.active {
+  background: var(--green-600);
+  border-color: var(--green-600);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(104, 159, 56, 0.25);
+}
+
+.tag-cloud-item:hover .tag-count,
+.tag-cloud-item.active .tag-count {
+  background: rgba(255,255,255,0.25);
+  color: var(--white);
+}
+
+.tag-name {
+  font-weight: 500;
+}
+
+.tag-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 0.35rem;
+  background: var(--green-200);
+  color: var(--green-800);
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+/* ---------- Tag Sections ---------- */
+.tags-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tag-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: var(--transition);
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.tag-section.highlight {
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px rgba(139, 195, 74, 0.15);
+}
+
+.tag-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--green-800);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--green-100);
+}
+
+.tag-section-title svg {
+  color: var(--green-500);
+  flex-shrink: 0;
+}
+
+.tag-section-count {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-light);
+  font-family: var(--font-sans);
+}
+
+/* ---------- Tag Posts List ---------- */
+.tag-posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-posts-list li {
+  border-bottom: 1px dashed var(--border-color);
+}
+.tag-posts-list li:last-child {
+  border-bottom: none;
+}
+
+.tag-post-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.tag-post-link:hover {
+  background: var(--green-50);
+  padding-left: 1rem;
+}
+
+.tag-post-title {
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.tag-post-link:hover .tag-post-title {
+  color: var(--green-700);
+}
+
+.tag-post-date {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Clickable Tags in Posts ---------- */
+.tag-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: var(--green-50);
+  color: var(--green-700);
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.tag-link:hover {
+  background: var(--green-100);
+  border-color: var(--green-300);
+  color: var(--green-800);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .tags-cloud {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .tag-cloud-item {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+  }
+  .tag-post-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}

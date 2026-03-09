@@ -25,23 +25,23 @@
 3. **编辑配置** — 修改 `_config.yml` 中的个人信息：
 
 ```yaml
-title: 你的博客名称
-url: "https://yourusername.github.io"
+title: 青栖
+url: "https://jiangtaopeng.github.io"
 author:
-  name: 你的名字
-  bio: "你的个人简介"
+  name: JiantaoPeng
+  bio: "人生体验师"
 ```
 
 4. **等待部署** — GitHub Actions 会自动构建和部署
 
-5. **访问博客** — 打开 `https://yourusername.github.io`
+5. **访问博客** — 打开 `https://jiangtaopeng.github.io`
 
 ### 方法二：本地开发
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/green-healing-blog.git
-cd green-healing-blog
+git clone https://github.com/JiangtaoPeng/jiangtaopeng.git.io.git
+cd jiangtaopeng
 
 # 安装依赖（需要 Ruby 和 Bundler）
 bundle install
@@ -71,7 +71,6 @@ cover: /assets/images/your-cover.jpg  # 可选的封面图
 ## 📁 目录结构
 
 ```
-green-healing-blog/
 ├── _config.yml          # 站点配置
 ├── _layouts/            # 页面布局模板
 │   ├── default.html     # 基础布局
@@ -122,4 +121,3 @@ MIT License — 随意使用和修改。
 ---
 
 > 🌿 用文字记录生活中的每一抹绿意。
-

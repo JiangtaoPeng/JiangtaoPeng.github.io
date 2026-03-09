@@ -11,7 +11,7 @@ layout: default
       {% if page.tags.size > 0 %}
       <div class="post-tags">
         {% for tag in page.tags %}
-        <span class="tag">🌿 {{ tag }}</span>
+        <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="tag-link">🌿 {{ tag }}</a>
         {% endfor %}
       </div>
       {% endif %}
@@ -33,6 +33,18 @@ layout: default
   </div>
 
   <footer class="post-footer">
+    {% if page.tags.size > 0 %}
+    <div class="post-footer-tags">
+      <span class="footer-tags-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        标签：
+      </span>
+      {% for tag in page.tags %}
+      <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="tag-link">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <div class="post-nav">
       {% if page.previous.url %}
       <a class="nav-prev" href="{{ page.previous.url | relative_url }}">
@@ -49,4 +61,3 @@ layout: default
     </div>
   </footer>
 </article>
-
